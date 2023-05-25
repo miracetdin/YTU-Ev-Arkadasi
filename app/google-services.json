@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "736566670905",
+    "firebase_url": "https://ytu-ev-arkadasi-9978c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ytu-ev-arkadasi-9978c",
+    "storage_bucket": "ytu-ev-arkadasi-9978c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736566670905:android:bad78a927486887033ffe8",
+        "android_client_info": {
+          "package_name": "com.example.ytu_ev_arkadasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736566670905-v4lcg7b0enicmsk62dr5vq08i34dd7i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu9Yv7-idewfnniWkXhlKhI7j3AJ7Iijw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736566670905-v4lcg7b0enicmsk62dr5vq08i34dd7i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
