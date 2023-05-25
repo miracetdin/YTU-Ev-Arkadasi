@@ -23,7 +23,6 @@
             android:grantUriPermissions="true">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_provider_paths"/>
-
         </provider>
 
         <activity android:name=".Login"
@@ -38,6 +37,14 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="com.example.ytu_ev_arkadasi.Register"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ResetPassword"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ytu_ev_arkadasi.ResetPassword"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
