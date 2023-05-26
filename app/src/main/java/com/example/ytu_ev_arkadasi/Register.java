@@ -52,6 +52,7 @@ public class Register extends AppCompatActivity {
 
     public static final int CAMERA_PERM_CODE = 101;
     public static final int CAMERA_REQUEST_CODE = 102;
+    public static final int GALLERY_REQUEST_CODE = 103;
 
     EditText name, surname, phone, department, grade, email, password, password2;
     ImageView profilePhoto;
@@ -112,6 +113,15 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 verifyPermissions();
+            }
+        });
+
+        selectFromGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iGallery = new Intent(Intent.ACTION_PICK);
+                iGallery.setData(MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(iGallery, GALLERY_REQUEST_CODE);
             }
         });
     }
@@ -276,6 +286,11 @@ public class Register extends AppCompatActivity {
                 profilePhoto.setImageURI(Uri.fromFile(f));
             }
         }
+        else if(resultCode == RESULT_OK){
+            if(requestCode == GALLERY_REQUEST_CODE){
+                profilePhoto.setImageURI(data.getData());
+            }
+        }
     }
 
     public void uploadPhoto(){
@@ -309,4 +324,15 @@ public class Register extends AppCompatActivity {
                     }
                 });
     }
+
+    // pick a photo from gallery
+    /* @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == RESULT_OK){
+            if(requestCode == GALLERY_REQUEST_CODE){
+                profilePhoto.setImageURI(data.getData());
+            }
+        }
+    } */
 }
