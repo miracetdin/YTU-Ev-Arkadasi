@@ -75,6 +75,8 @@ public class Login extends AppCompatActivity {
                             public void onSuccess(AuthResult authResult) {
                                 mUser = mAuth.getCurrentUser();
                                 Toast.makeText(Login.this, "Hoşgeldin \n" + mUser.getEmail(), Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(getApplicationContext(), Profile.class);
+                                startActivity(intent);
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override

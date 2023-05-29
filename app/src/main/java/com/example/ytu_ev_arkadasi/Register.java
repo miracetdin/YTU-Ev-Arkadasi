@@ -324,15 +324,4 @@ public class Register extends AppCompatActivity {
                     }
                 });
     }
-
-    // pick a photo from gallery
-    /* @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
-        super.onActivityResult(requestCode, resultCode, data);
-        if(resultCode == RESULT_OK){
-            if(requestCode == GALLERY_REQUEST_CODE){
-                profilePhoto.setImageURI(data.getData());
-            }
-        }
-    } */
 }
