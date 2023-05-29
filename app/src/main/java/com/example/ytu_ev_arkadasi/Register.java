@@ -130,7 +130,7 @@ public class Register extends AppCompatActivity {
     public void registerFunc(){
         if((!TextUtils.isEmpty(email.getText().toString())) && (!TextUtils.isEmpty(password.getText().toString()))
                 && (!TextUtils.isEmpty(password2.getText().toString()))){
-            if((email.getText().toString().contains("std.yildiz.edu.tr"))) {
+            //if((email.getText().toString().contains("std.yildiz.edu.tr"))) {
                 if ((password.getText().toString().equals(password2.getText().toString()))) {
                     mAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                             .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -148,10 +148,10 @@ public class Register extends AppCompatActivity {
                 } else {
                     Toast.makeText(this, "Girilen şifreler aynı değil!", Toast.LENGTH_SHORT).show();
                 }
-            }
-            else{
-                Toast.makeText(this, "Sadece std.yildiz.edu.tr uzantılı mail adresi ile kayıt olabilirsiniz!", Toast.LENGTH_SHORT).show();
-            }
+            //}
+            //else{
+            //    Toast.makeText(this, "Sadece std.yildiz.edu.tr uzantılı mail adresi ile kayıt olabilirsiniz!", Toast.LENGTH_SHORT).show();
+            //}
         }
         else{
             Toast.makeText(this, "Email ve Şifre alanları boş bırakılamaz!", Toast.LENGTH_SHORT).show();

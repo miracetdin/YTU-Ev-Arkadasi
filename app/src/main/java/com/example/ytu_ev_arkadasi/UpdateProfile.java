@@ -155,7 +155,7 @@ public class UpdateProfile extends AppCompatActivity {
     public void updateFunc(){
         if((!TextUtils.isEmpty(email.getText().toString())) && (!TextUtils.isEmpty(password.getText().toString()))
                 && (!TextUtils.isEmpty(password2.getText().toString()))){
-            if((email.getText().toString().contains("std.yildiz.edu.tr"))) {
+            //if((email.getText().toString().contains("std.yildiz.edu.tr"))) {
                 if ((password.getText().toString().equals(password2.getText().toString()))) {
 
                     mUser = mAuth.getCurrentUser();
@@ -183,10 +183,10 @@ public class UpdateProfile extends AppCompatActivity {
                 } else {
                     Toast.makeText(this, "Girilen şifreler aynı değil!", Toast.LENGTH_SHORT).show();
                 }
-            }
-            else{
-                Toast.makeText(this, "Sadece std.yildiz.edu.tr uzantılı mail adresi ile kayıt olabilirsiniz!", Toast.LENGTH_SHORT).show();
-            }
+            //}
+            //else{
+            //    Toast.makeText(this, "Sadece std.yildiz.edu.tr uzantılı mail adresi ile kayıt olabilirsiniz!", Toast.LENGTH_SHORT).show();
+            //}
         }
         else{
             Toast.makeText(this, "Email ve Şifre alanları boş bırakılamaz!", Toast.LENGTH_SHORT).show();

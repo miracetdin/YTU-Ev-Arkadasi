@@ -68,7 +68,7 @@ public class Login extends AppCompatActivity {
 
     public void loginFunc(){
         if((!TextUtils.isEmpty(email.getText().toString())) && (!TextUtils.isEmpty(password.getText().toString()))){
-            if(email.getText().toString().contains("std.yildiz.edu.tr")) {
+            //if(email.getText().toString().contains("std.yildiz.edu.tr")) {
                 mAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
@@ -84,10 +84,10 @@ public class Login extends AppCompatActivity {
                                 Toast.makeText(Login.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         });
-            }
-            else{
-                Toast.makeText(this, "Sadece std.yildiz.edu.tr uzantılı mail adresi ile giriş yapabilirisiniz!", Toast.LENGTH_SHORT).show();
-            }
+            //}
+            //else{
+            //    Toast.makeText(this, "Sadece std.yildiz.edu.tr uzantılı mail adresi ile giriş yapabilirisiniz!", Toast.LENGTH_SHORT).show();
+            //}
         }
         else{
             Toast.makeText(Login.this, "E-Posta ya da Şifre Boş Bırakılamaz!", Toast.LENGTH_SHORT).show();
