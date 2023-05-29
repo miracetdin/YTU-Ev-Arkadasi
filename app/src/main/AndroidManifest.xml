@@ -57,6 +57,14 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".UpdateProfile"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ytu_ev_arkadasi.UpdateProfile"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

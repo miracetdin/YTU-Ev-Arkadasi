@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/dark_blue">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/dark_blue"
+                app:popupTheme="@style/Widget.AppCompat.PopupMenu"
+                android:titleTextColor="@color/yellow"
+                android:title="Bilgileri Güncelle"
+                android:titleMarginStart="105dp"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="İsim"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateprofile_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Soyisim"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateprofile_et_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Profil Fotoğrafı"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/updateprofile_iv_profilePhoto"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginEnd="50dp"
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:id="@+id/updateprofile_bt_takePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="103dp"
+            android:text="Fotoğraf Çek"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/updateprofile_bt_selectPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="103dp"
+            android:text="Galeriden Seç"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Telefon"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateprofile_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Bölüm"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateprofile_et_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Sınıf"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateprofile_et_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Durum"
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:id="@+id/updateprofile_rg_looking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp">
+
+            <RadioButton
+                android:id="@+id/updateprofile_rb_lookingroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalacak Oda/Ev Arıyorum"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:onClick="checklooking"/>
+
+            <RadioButton
+                android:id="@+id/updateprofile_rb_lookingroommate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oda/Ev Arkadaşı Arıyorum"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:onClick="checklooking"/>
+
+            <RadioButton
+                android:id="@+id/updateprofile_rb_lookingnot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aramıyorum"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:onClick="checklooking"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Evde Kalabileceği Süre"
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:id="@+id/updateprofile_rg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp">
+
+            <RadioButton
+                android:id="@+id/updateprofile_rb_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Ay"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:onClick="checktime"/>
+
+            <RadioButton
+                android:id="@+id/updateprofile_rb_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-6 Ay"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:onClick="checktime"/>
+
+            <RadioButton
+                android:id="@+id/updateprofile_rb_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6-12 Ay"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:onClick="checktime"/>
+
+            <RadioButton
+                android:id="@+id/updateprofile_rb_time4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1+ Sene"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:onClick="checktime"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Kmapüse İstenen/Olan Mesafe"
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:id="@+id/updateprofile_rg_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp">
+
+            <RadioButton
+                android:id="@+id/updateprofile_rb_distance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 km'den az"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:onClick="checkdistance"/>
+
+            <RadioButton
+                android:id="@+id/updateprofile_rb_distance2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-50 km"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:onClick="checkdistance"/>
+
+            <RadioButton
+                android:id="@+id/updateprofile_rb_distance3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50 km'den fazla"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:onClick="checkdistance"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Email"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateprofile_et_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Şifre"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateprofile_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Şifreyi Tekrar Giriniz"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateprofile_et_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/updateprofile_bt_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="103dp"
+            android:text="Güncelle"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
